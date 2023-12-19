@@ -56,7 +56,7 @@ function VirtualUsers() {
             Transactions Per Second:
             <input
                 value={transactionsPerSecond}
-                style={{ width: '200px' }}
+                style={{ width: '100px' }}
                 onChange={e => setTransactionsPerSecond(e.target.value)}
                 type="number"
             />           
@@ -65,7 +65,7 @@ function VirtualUsers() {
         <label style={{ display: 'flex', flexDirection: 'column' }}>
             Average Response Time (seconds):
             <input
-                style={{ width: '200px' }}
+                style={{ width: '100px' }}
                 value={responseTime}
                 onChange={e => setResponseTime(e.target.value)}
             />
@@ -75,7 +75,7 @@ function VirtualUsers() {
             Think Time (seconds):
             <input
                 value={thinkTime}
-                style={{ width: '200px' }}
+                style={{ width: '100px' }}
                 onChange={e => setThinkTime(e.target.value)}
                 type="number"
             />
@@ -103,7 +103,7 @@ function Pacing() {
             Transactions Per Hour:
             <input
                 value={transactionsPerHour}
-                style={{ width: '200px' }}
+                style={{ width: '100px' }}
                 onChange={e => setTransactionsPerHour(e.target.value)}
                 type="number"
             />           
@@ -112,7 +112,7 @@ function Pacing() {
         <label style={{ display: 'flex', flexDirection: 'column' }}>
             Number of Virtual Users:
             <input
-                style={{ width: '200px' }}
+                style={{ width: '100px' }}
                 value={virtualUsers}
                 onChange={e => setVirtualUsers(e.target.value)}
             />
@@ -142,7 +142,7 @@ function TestData() {
             Number of virtual users:
             <input
                 value={virtualUsersTestData}
-                style={{ width: '200px' }}
+                style={{ width: '100px' }}
                 onChange={e => setVirtualUsersTestData(e.target.value)}
                 type="number"
             />           
@@ -151,7 +151,7 @@ function TestData() {
         <label style={{ display: 'flex', flexDirection: 'column' }}>
             Each Vuser duration (minutes):
             <input
-                style={{ width: '200px' }}
+                style={{ width: '100px' }}
                 value={vUserDurationMinutes}
                 onChange={e => setVUserDurationMinutes(e.target.value)}
             />
@@ -161,7 +161,7 @@ function TestData() {
             Test duration (hours):
             <input
                 value={testDurationHour}
-                style={{ width: '200px' }}
+                style={{ width: '100px' }}
                 onChange={e => setTestDurationHour(e.target.value)}
                 type="number"
             />
@@ -194,7 +194,7 @@ function LoadGenerator() {
             Total LG RAM (MB):
             <input
                 value={lgRAM}
-                style={{ width: '200px' }}
+                style={{ width: '100px' }}
                 onChange={e => setLGRAM(e.target.value)}
                 type="number"
             />           
@@ -203,7 +203,7 @@ function LoadGenerator() {
         <label style={{ display: 'flex', flexDirection: 'column' }}>
             First VUser Memory (MB):
             <input
-                style={{ width: '200px' }}
+                style={{ width: '100px' }}
                 value={firstVUserMemoryMB}
                 onChange={e => setFirstVUserMemoryMB(e.target.value)}
             />
@@ -213,7 +213,7 @@ function LoadGenerator() {
             Each Additional VUser Memory (MB):
             <input
                 value={additionalVUserMemoryMB}
-                style={{ width: '200px' }}
+                style={{ width: '100px' }}
                 onChange={e => setAdditionalVUserMemoryMB(e.target.value)}
                 type="number"
             />
@@ -223,7 +223,7 @@ function LoadGenerator() {
             OS RAM - typically it would be around 700-750 MB:
             <input
                 value={osRAM}
-                style={{ width: '200px' }}
+                style={{ width: '100px' }}
                 onChange={e => {                    
                     setOSRAM(e.target.value)
                 }                    
